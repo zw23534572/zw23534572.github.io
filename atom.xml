@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-30T05:57:29.305Z</updated>
+  <updated>2020-07-30T06:35:26.023Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>五种IO模型介绍</title>
+    <link href="http://yoursite.com/2020/07/30/%E4%BA%94%E7%A7%8DIO%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://yoursite.com/2020/07/30/%E4%BA%94%E7%A7%8DIO%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D/</id>
+    <published>2020-07-30T06:34:53.926Z</published>
+    <updated>2020-07-30T06:35:26.023Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>IO 多路复用是5种I/O模型中的第3种，对各种模型讲个故事，描述下区别：<br>故事情节为：老李去买火车票，三天后买到一张退票。参演人员（老李，黄牛，售票员，快递员），往返车站耗费1小时。</p><h2 id="阻塞I-O模型"><a href="#阻塞I-O模型" class="headerlink" title="阻塞I/O模型"></a>阻塞I/O模型</h2><p>老李去火车站买票，排队三天买到一张退票。<br>耗费：在车站吃喝拉撒睡 3天，其他事一件没干。</p><h2 id="非阻塞I-O模型"><a href="#非阻塞I-O模型" class="headerlink" title="非阻塞I/O模型"></a>非阻塞I/O模型</h2><p>老李去火车站买票，隔12小时去火车站问有没有退票，三天后买到一张票。<br>耗费：往返车站6次，路上6小时，其他时间做了好多事。</p><h2 id="I-O复用模型"><a href="#I-O复用模型" class="headerlink" title="I/O复用模型"></a>I/O复用模型</h2><h4 id="select-poll"><a href="#select-poll" class="headerlink" title="select/poll"></a>select/poll</h4><p>老李去火车站买票，委托黄牛，然后每隔6小时电话黄牛询问，黄牛三天内买到票，然后老李去火车站交钱领票。 </p><p>耗费：往返车站2次，路上2小时，黄牛手续费100元，打电话17次</p><h4 id="epoll"><a href="#epoll" class="headerlink" title="epoll"></a>epoll</h4><p>老李去火车站买票，委托黄牛，黄牛买到后即通知老李去领，然后老李去火车站交钱领票。 </p><p>耗费：往返车站2次，路上2小时，黄牛手续费100元，无需打电话</p><h4 id="信号驱动I-O模型"><a href="#信号驱动I-O模型" class="headerlink" title="信号驱动I/O模型"></a>信号驱动I/O模型</h4><p>老李去火车站买票，给售票员留下电话，有票后，售票员电话通知老李，然后老李去火车站交钱领票。 </p><p>耗费：往返车站2次，路上2小时，免黄牛费100元，无需打电话</p><h4 id="异步I-O模型"><a href="#异步I-O模型" class="headerlink" title="异步I/O模型"></a>异步I/O模型</h4><p>老李去火车站买票，给售票员留下电话，有票后，售票员电话通知老李并快递送票上门。 </p><p>耗费：往返车站1次，路上1小时，免黄牛费100元，无需打电话</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul><li>1同2的区别是：自己轮询</li><li>2同3的区别是：委托黄牛</li><li>3同4的区别是：电话代替黄牛</li><li>4同5的区别是：电话通知是自取还是送票上门</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;IO 多路复用是5种I/O模型中的第3种，对各种模型讲个故事，描述下区别：&lt;br&gt;故事情节为：老李去买火车票，三天后买到一张退票。参演人员（
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World11</title>
